@@ -4,9 +4,9 @@
     --kw-txt-clr: black;
     --weekday-txt-clr: black;
     --border-color: black;
-    --field-width: 50px;
+    --field-width: 100%;
     --field-height: 50px;
-	--days-border-radius: 50px;
+	--days-border-radius: 10px;
     --days-font-weight: 500;
     --days-font-size: 175%;
     --days-border-color: transparent;
