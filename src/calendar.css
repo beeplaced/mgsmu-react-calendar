@@ -32,6 +32,7 @@
 	user-select: none;
     background-color: var(--calendar-bck-clr);
 }
+
 .calendar_row {
 	flex-direction: row;
 	justify-content: space-between;
@@ -60,7 +61,7 @@
 }
 
 .day-wrapper{
-	width: 100%;
+	width: auto;
     justify-content: center;
     display: flex;
     padding: var(--field-padding);
