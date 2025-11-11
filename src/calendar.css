@@ -1,20 +1,21 @@
 :root{
-    --calendar-bck-clr: green;
-	--kw-txt-clr: blue;
-	--weekday-txt-clr: darkgoldenrod;
-	--border-color: black;
-	--field-width: 50px;
-	--field-height: 50px;
-	--days-font-weight: 500;
-	--days-font-size: 110%;
-	--days-border-color: transparent;
-    --days-border-color-selected: blue;
-	--days-border-width: 4px;
+    --calendar-bck-clr: wheat;
+	--calendar-border-radius: 20px;
+    --kw-txt-clr: black;
+    --weekday-txt-clr: black;
+    --border-color: black;
+    --field-width: 50px;
+    --field-height: 50px;
+	--days-border-radius: 50px;
+    --days-font-weight: 500;
+    --days-font-size: 175%;
+    --days-border-color: transparent;
+    --days-border-color-selected: black;
+    --days-border-width: 4px;
     --day-bck-clr: yellow;
     --day-bck-clr-today: black;
     --day-bck-clr-future: firebrick;
-    --day-bck-clr-past: firebrick;
-	--day-bck-clr: #ffd700;
+    --day-bck-clr-past: darkcyan;
     --field-padding: 10px;
 	color: #333;
 	font-weight: bold;
@@ -27,7 +28,7 @@
 	font-size: 80%;
 	overflow: hidden;
 	z-index: 99;
-	border-radius: 20px;
+	border-radius: var(--calendar-border-radius);
 	user-select: none;
     background-color: var(--calendar-bck-clr);
 }
@@ -66,7 +67,7 @@
 }
 
 .cal-field.days{
-	border-radius: 50px;
+	border-radius: var(--days-border-radius);
 	width: var(--field-width);
 	height: var(--field-height);
 	font-weight: var(--days-font-weight);
@@ -144,6 +145,7 @@
 	font-weight: bold;
 	border-bottom: 2px solid #0056b3;
 }
+
 .calendar_header div {
 	flex: 1;
 	text-align: center;
@@ -155,6 +157,7 @@
 	font-weight: bold;
 	text-align: center;
 }
+
 .calendar-weekdays {
 	display: flex;
 	background-color: #f0f0f0;
