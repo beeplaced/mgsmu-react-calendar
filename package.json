@@ -1,13 +1,20 @@
 {
   "name": "mgsmu-react-calendar",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Calendar component with minimal global state management",
   "main": "dist/Calendar.js",
   "types": "dist/Calendar.d.ts",
   "scripts": {
-    "build": "tsc",
+    "build": "tsc && cp src/calendar.css dist/",
     "prepublishOnly": "npm run build"
   },
+  "exports": {
+  ".": {
+    "import": "./dist/Calendar.js",
+    "require": "./dist/Calendar.js"
+  },
+  "./calendar.css": "./dist/calendar.css"
+},
   "keywords": [
     "calendar",
     "react",
